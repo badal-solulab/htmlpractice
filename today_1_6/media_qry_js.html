@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>
+		js
+	</title>
+	<style type="text/css">
+		:root{
+			--blue: red;
+			--white:white;
+		}     
+		 /*this is what we declare the variables using the root*/
+		body{
+			background-color: var(--blue);
+		}
+		.container{
+			--fontsize: 25px;
+			/*--backgroundcolor: var(--red);*/
+		}
+		h2{
+			border-bottom: 2px solid var(--blue);
+		}
+		.container{
+			background-color: var(--white);
+			color: var(--blue);
+			padding: 15px;
+			font-size: var(--fontsize);
+		}
+		@media screen and (min-width: 800px){
+			.container{
+				--fontsize : 50px; 
+				/*backgroundcolor: red;*/
+			}
+
+			:root{
+				--blue:blue;
+			};
+		}
+	</style>
+	<!-- <script type="text/javascript">
+		
+	</script> -->
+</head>
+<body>
+<h1>Using variables in media queries</h1>
+<div class="container">
+	<h2>Hello Good Morning</h2>
+	<p>When the browser's width is less than 450px, the font-size of this div is 25px. When it is 450px or wider, set the --fontsize variable value to 50px. Resize the browser window to see the effect.</p>
+</div>
+</body>
+</html>
